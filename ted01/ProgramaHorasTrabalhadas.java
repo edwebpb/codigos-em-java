@@ -34,12 +34,19 @@ public class ProgramaHorasTrabalhadas {
     public float getSalariobruto() {
         return this.salariobruto;
     }
-
     public float getSalarioliquido() {
         return (float) this.salarioliquido;
     }
-
     public float getVlrdesconto() {
         return this.vlrdesconto;
+    }
+    public float getIrpf(){
+        return this.salariobruto*this.irpf;
+    }
+    public float getInss(){
+        return this.salariobruto*this.inss;
+    }
+    public float getSindicato(){
+        return this.salariobruto*this.sindicato;
     }
 }
