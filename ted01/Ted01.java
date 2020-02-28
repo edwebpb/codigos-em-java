@@ -49,7 +49,13 @@ public class Ted01 {
                 float calcula2=valor2.nextFloat();
                 
                 calcula.calcularSalario(calcula1,calcula2);
+                System.out.println("O salario bruto é de R$ "+calcula.getSalariobruto());
+                System.out.println("Pagou ao IRPF R$ "+calcula.getIrpf());
+                System.out.println("Pagou ao INSS R$ "+calcula.getInss());
+                System.out.println("Pagou ao Sindicato R$ "+calcula.getSindicato());
+                System.out.println("O valor total descontado foi de R$ "+calcula.getVlrdesconto());
                 System.out.println("O salario liquido a receber é de R$ "+calcula.getSalarioliquido());
+                
                 
                 valor1.close();
                 valor2.close();
